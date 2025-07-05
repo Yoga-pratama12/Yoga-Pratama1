@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Fashion Keren - Pakaian Trendi untuk Semua!</title>
+    <style>
+        /* CSS dasar untuk tampilan - bisa dipisah ke style.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x500/cccccc/ffffff?text=Promo+Terbaru+Fashion+Anda') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .hero .button {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .products {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .products h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .product-item {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .product-item h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .product-item .price {
+            font-size: 1.3em;
+            color: #e60023;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .product-item .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        footer .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Toko Fashion Keren</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Gaya Terbaru, Harga Terbaik!</h1>
+            <p>Temukan koleksi fashion terkini untuk pria dan wanita.</p>
+            <a href="#products" class="button">Lihat Koleksi Sekarang</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Produk Unggulan</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="D:\notepad\kemejabiru.jpeg"/300x400/87CEEB/ffffff?text=Kemeja+Biru" alt="Kemeja Biru Pria">
+                    <h3>Kemeja Biru Casual Pria</h3>
+                    <p>Kemeja katun berkualitas tinggi, nyaman dipakai seharian.</p>
+                    <div class="price">Rp 199.000</div>
+                    <a href="#" class="button">Lihat Detail</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="D:\notepad\dress merah.jpeg""/300x400/FFC0CB/ffffff?text=Dress+Merah" alt="Dress Merah Wanita">
+                    <h3>Dress Wanita Elegan Merah</h3>
+                    <p>Dress dengan desain modern, cocok untuk acara spesial.</p>
+                    <div class="price">Rp 349.000</div>
+                    <a href="#" class="button">Lihat Detail</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="D:\notepad\jeans.jpeg""/300x400/90EE90/ffffff?text=Celana+Jeans" alt="Celana Jeans Pria">
+                    <h3>Celana Jeans Slim Fit Pria</h3>
+                    <p>Jeans nyaman dengan potongan slim fit, gaya dan trendi.</p>
+                    <div class="price">Rp 275.000</div>
+                    <a href="#" class="button">Lihat Detail</a>
+                </div>
+
+                <div class="product-item">
+                    <img src="D:\notepad\bluss.jpeg"/300x400/FFD700/ffffff?text=Blus+Kuning" alt="Blus Kuning Wanita">
+                    <h3>Blus Santai Wanita Kuning</h3>
+                    <p>Blus ringan dan adem, sempurna untuk gaya sehari-hari.</p>
+                    <div class="price">Rp 150.000</div>
+                    <a href="#" class="button">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Toko Fashion Keren. Semua Hak Cipta Dilindungi.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
